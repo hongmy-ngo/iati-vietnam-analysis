@@ -1,44 +1,73 @@
 # Vietnam Development Aid Dashboard
 
-A project from my Data Analyst training. I loaded, cleaned and visualized public [IATI data](https://countrydata.iatistandard.org/data/countries/VN/) on development projects in Vietnam — built as two interactive dashboards, one with Dash and one with Streamlit.
+### IATI Data Analysis · Python · Dash · Streamlit · Plotly
 
-**Tools:** Python, pandas, Plotly, Dash, Streamlit
+This project analyzes development aid projects in Vietnam using publicly available data from the International Aid Transparency Initiative (IATI).
+
+Two interactive dashboards were developed: one using Dash and the other using Streamlit, each designed to visualize different aspects of development cooperation in Vietnam.
 
 ---
 
-## What the dashboard shows
+## Contents
 
-- Number of projects, total budget and expenditure as KPIs
-- Top 10 sectors by budget
-- Project status (active, completed, planned)
-- Budget development over time
-- Budget vs. actual expenditure
-- Missing values in the dataset (data quality)
+| File               | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `streamlit_app.py` | Streamlit dashboard with sidebar filters              |
+| `dash_app.py`      | Dash dashboard featuring dropdown menus and callbacks |
+| `requirements.txt` | Required Python packages                              |
+
+---
+
+## What the dashboards show
+
+* **KPIs:** Number of projects, total budget, expenditures to date, and budget utilization
+* **Sector Distribution:** Top 10 funded sectors by budget allocation
+* **Project Status:** Active, completed, and planned projects
+* **Time Trends:** Budget development over time
+* **Budget vs. Expenditures:** Scatter plot illustrating fund utilization
+* **Data Quality:** Missing values by variable
 
 ---
 
 ## Data
 
-Data comes from [countrydata.iatistandard.org](https://countrydata.iatistandard.org/data/countries/VN/) and is not included in this repository. To download:
+The raw data is provided by the International Aid Transparency Initiative (IATI) and is not included in this repository due to licensing restrictions.
 
-1. Go to https://countrydata.iatistandard.org/data/countries/VN/
-2. Download `IATI activities in Viet Nam` as CSV
+To download the dataset:
+
+1. Visit the IATI country data portal for Vietnam
+2. Download the dataset **"IATI activities in Viet Nam"** as a CSV file
 3. Save the file as `data/IATI_activities_vietnam.csv`
 
 ---
 
-## Getting started
+## Installation & Usage
 
 ```bash
+# Clone the repository
+git clone https://github.com/YOUR-USERNAME/iati-vietnam-analysis.git
+cd iati-vietnam-analysis
+
+# Install dependencies
 pip install -r requirements.txt
 
-# Streamlit
+# Run the Streamlit dashboard
 streamlit run streamlit_app.py
 
-# or Dash
+# Or run the Dash dashboard
 python dash_app.py
 ```
 
 ---
 
-**Hong My Ngo** · [LinkedIn](https://www.linkedin.com/in/h-my-ngo)
+## Technologies
+
+`Python` · `pandas` · `Plotly` · `Dash` · `Streamlit`
+
+---
+
+## Author
+
+**My Ngo** · [LinkedIn](https://www.linkedin.com/in/h-my-ngo)
+
+GitHub: https://github.com/hongmy-ngo
